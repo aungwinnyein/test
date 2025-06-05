@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .first-h1 {
+            color: red;
+        }
+
+        /* #first-h1{
+            color: blue;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1 class="first-h1" id="first-h1">Hello</h1>
+    <p>Body</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis odio doloribus nisi laboriosam expedita
+        molestiae aut, minus eum cumque.</p>
+        <span>Testing</span>
+    <h1 class="second-h1">Welcome</h1>
+</body>
+<script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the first h1 by ID
+        const firstHeading = document.getElementById("first-h1");
+
+        // Get the second h1 by class
+        const secondHeading = document.querySelector(".second-h1");
+
+        // Add click event to the first heading
+        firstHeading.addEventListener("click", function() {
+            firstHeading.textContent = "First heading clicked!";
+            firstHeading.style.color = "blue";
+        });
+
+        // Add click event to the second heading
+        secondHeading.addEventListener("click", function() {
+            secondHeading.textContent = "Second heading clicked!";
+            secondHeading.style.color = "purple";
+        });
+    });
+</script>
+
+
+
+</html>
